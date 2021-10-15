@@ -241,7 +241,7 @@ static const struct proc_ops proc_acpi_operations = {
 
 static int legion_wmi_probe(struct wmi_device *wdev, const void *context)
 {
-	dev_info(&wdev->dev, "LEGION WMI INIT LMAO");
+	dev_info(&wdev->dev, "Probe is starting.");
 
 	if (!wmi_has_guid(LEGION_WMI_FAN_MODE_EVENT_GUID)) {
 		dev_warn(&wdev->dev, "No known FAN MODE EVENT WMI GUID found");
@@ -298,7 +298,7 @@ static void legion_wmi_remove(struct wmi_device *wdev) {
 
     remove_proc_entry("legion_call", acpi_root_dir);
 
-    dev_info(&wdev->dev, "procfs enry removed\n");
+    dev_info(&wdev->dev, "procfs entry removed\n");
 }
 
 static struct wmi_driver legion_wmi_driver = {
@@ -311,8 +311,10 @@ static struct wmi_driver legion_wmi_driver = {
 };
 
 module_wmi_driver(legion_wmi_driver);
+
 MODULE_DEVICE_TABLE(wmi, legion_wmi_id_table);
 
-MODULE_DESCRIPTION("Legion WMI Driver");
+MODULE_DESCRIPTION("Lenovo Legion WMI Driver");
+MODULE_AUTHOR("Adnan Pri <adnan.pri@gmail.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_VERSION("0.1");
