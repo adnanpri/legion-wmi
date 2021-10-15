@@ -12,7 +12,7 @@ Sample output of `nvidia-smi` on "performance" mode during benchmarks:
 |                               |                      |               MIG M. |
 |===============================+======================+======================|
 |   0  NVIDIA GeForce ...  Off  | 00000000:01:00.0  On |                  N/A |
-| N/A   60C    P3    80W /  N/A |   1716MiB /  5946MiB |      2%      Default |
+| N/A   60C    P3    80W /  N/A |   1716MiB /  5946MiB |      98%      Default |
 |                               |                      |                  N/A |
 +-------------------------------+----------------------+----------------------+
 ```
