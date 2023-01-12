@@ -3,6 +3,7 @@
 
 # ... except essential
 !/.gitignore
+!/dkms.conf
 !/legion-wmi.c
 !/LICENCE
 !/Makefile
