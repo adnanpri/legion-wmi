@@ -1,0 +1,11 @@
+# Exclude all...
+*
+
+# ... except essential
+!/.gitignore
+!/dkms.conf
+!/legion-wmi.c
+!/LICENCE
+!/Makefile
+!/procfs.c
+!/README.md
